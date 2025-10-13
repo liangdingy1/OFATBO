@@ -2,9 +2,19 @@
 
 Batch-Experiment Termination-Aware Bayesian Optimization(BETABO)
 
-## Data Availability
+> **Note**: Experimental data and complete results are withheld during the manuscript review process and will be released upon formal acceptance.
 
-The source code for processing is provided in this repository. The experimental datasets are not included here due to their current status as part of a manuscript under review.
+## Current Contents
+- [x] Core algorithm code
+- [x] Model definitions
+- [x] Basic utility functions
+- [x] Benchmark testing code
+- [x] Experimental setup code
+- [ ] Experimental data (under review)
+
+
+## Data Availability
+Experimental data is not currently publicly available. Will be updated after paper acceptance.
 
 The data of this study are available in the Supplementary Information of the associated paper, which is currently under review. Upon final acceptance of the manuscript, this repository will be updated to include the complete dataset and code.
 
