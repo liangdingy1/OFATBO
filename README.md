@@ -1,6 +1,6 @@
-# BETABO
+# OFAT-BO
 
-Batch-Experiment Termination-Aware Bayesian Optimization(BETABO)
+One-Factor-at-a-Time Bayesian Optimization(OFAT-BO)
 
 > **Note**: Experimental data and complete results are withheld during the manuscript review process and will be released upon formal acceptance.
 
