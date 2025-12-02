@@ -367,10 +367,9 @@ def process_seed(args):
     })
 
 
-def evaluate_xgboost_params(xgboost_params, iteration):
+def evaluate_xgboost_params(xgboost_params):
 
     params_record = {
-        'iteration': iteration,
         'n_estimators': int(xgboost_params['n_estimators']),
         'max_depth': int(xgboost_params['max_depth']),
         'learning_rate': xgboost_params['learning_rate'],
@@ -396,18 +395,15 @@ def evaluate_xgboost_params(xgboost_params, iteration):
     )
 
     done_df = pd.concat(results).sort_values('seed').reset_index(drop=True)
-    success_rate = (done_df['done_index'] != -1).mean()
 
     filename = f"rv_ofatbo.csv"
     done_df.to_csv(filename, index=False)
 
 
-    return success_rate
-
 
 def main():
 
-    xgboost_params_iteration_2 = {
+    xgboost_params = {
         'n_estimators': 109.0,
         'max_depth': 6.0,
         'learning_rate': 0.1514738597380149,
@@ -417,7 +413,7 @@ def main():
         'reg_lambda': 1.4552430554022893
     }
 
-    success_rate = evaluate_xgboost_params(xgboost_params_iteration_2, 2)
+    evaluate_xgboost_params(xgboost_params)
 
 
 if __name__ == '__main__':
